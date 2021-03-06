@@ -274,4 +274,12 @@ class SiteController extends Controller
             'model' => $model
         ]);
     }
+    public function actionProduct()
+    {
+        return $this->render('product');
+    }
+    public function actionDetail()
+    {
+        return $this->render('detail');
+    }
 }
