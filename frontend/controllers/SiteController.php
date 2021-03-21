@@ -283,6 +283,7 @@ class SiteController extends Controller
      */
     public function actionForm()
     {
+
         $model = new ActiveForm();
         if ($model->load(Yii::$app->request->post()) && $model->validate()) {
 
