@@ -274,4 +274,8 @@ class SiteController extends Controller
             'model' => $model
         ]);
     }
+
+    public function actionCooperate() {
+        return $this->render('cooperate');
+    }
 }

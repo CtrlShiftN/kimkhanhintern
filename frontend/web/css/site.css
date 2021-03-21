@@ -118,3 +118,14 @@ a.desc:after {
 .nav > li > form > button.logout:focus {
     outline: none;
 }
+@media only screen and (max-width: 770px) {
+    .imageNone {
+        display: none;
+    }
+}
+.progress {
+    height: 1px;
+}
+.progress-bar {
+    width: 150px;
+}
