@@ -1,19 +1,22 @@
 <?php
+
 namespace frontend\controllers;
 
+use common\models\LoginForm;
+use frontend\models\ActiveForm;
+use frontend\models\ContactForm;
+use frontend\models\PasswordResetRequestForm;
 use frontend\models\ResendVerificationEmailForm;
+use frontend\models\ResetPasswordForm;
+use frontend\models\SignupForm;
 use frontend\models\VerifyEmailForm;
 use Yii;
 use yii\base\InvalidArgumentException;
+use yii\filters\AccessControl;
+use yii\filters\VerbFilter;
 use yii\web\BadRequestHttpException;
 use yii\web\Controller;
-use yii\filters\VerbFilter;
-use yii\filters\AccessControl;
-use common\models\LoginForm;
-use frontend\models\PasswordResetRequestForm;
-use frontend\models\ResetPasswordForm;
-use frontend\models\SignupForm;
-use frontend\models\ContactForm;
+use yii\web\Response;
 
 /**
  * Site controller
@@ -233,8 +236,8 @@ class SiteController extends Controller
      * Verify email address
      *
      * @param string $token
+     * @return Response
      * @throws BadRequestHttpException
-     * @return yii\web\Response
      */
     public function actionVerifyEmail($token)
     {
@@ -274,4 +277,23 @@ class SiteController extends Controller
             'model' => $model
         ]);
     }
+
+    /**
+     * @return string|Response
+     */
+    public function actionForm()
+    {
+
+        $model = new ActiveForm();
+        if ($model->load(Yii::$app->request->post()) && $model->validate()) {
+
+            return $this->goHome();
+
+        } else {
+
+            return $this->render('form', ['model' => $model]);
+
+        }
+    }
+
 }
