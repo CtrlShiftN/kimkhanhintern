@@ -27,6 +27,4 @@ class ActiveForm extends Model
             ['name', 'string', 'max' => 100],
         ];
     }
-
-
 }

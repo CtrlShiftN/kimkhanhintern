@@ -5,23 +5,25 @@ use yii\widgets\ActiveForm;
 
 ?>
 <div class="container">
-
     <div class="row">
-
 
         <div class="col-sm-12 col-md-3 col-lg-3"></div>
         <div class="col-sm-12 col-md-6 col-lg-6">
-            <h1 class="text-center">Login</h1>
-            <?php $form = ActiveForm::begin() ?>
-            <?= $form->field($model, 'name')->input('text'); ?>
-            <?= $form->field($model, 'password')->input('password'); ?>
-            <?= $form->field($model, 'email')->input('email'); ?>
 
+            <?php $form = ActiveForm::begin(['id' => 'testForm']); ?>
+
+            <?= $form->field($model, 'name')->textInput(['placeholder' => 'enter your name'])->label(false) ?>
+
+            <?= $form->field($model, 'password')->passwordInput(['placeholder' => 'enter your password'])->label(false) ?>
+
+            <?= $form->field($model, 'email')->input('email', ['placeholder' => 'enter your email'])->label(false) ?>
 
             <div class="form-group">
-                <?= Html::submitButton('Submit', ['class' => 'btn btn-danger']) ?>
+                <?= Html::submitButton('Submit', ['class' => 'btn btn-primary']) ?>
             </div>
-            <?php $form = ActiveForm::end() ?>
+
+            <?php ActiveForm::end(); ?>
+
         </div>
         <div class="col-sm-12 col-md-3 col-lg-3"></div>
 
