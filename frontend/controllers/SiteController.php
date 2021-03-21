@@ -1,6 +1,7 @@
 <?php
 namespace frontend\controllers;
 
+use frontend\models\ActiveForm;
 use frontend\models\ResendVerificationEmailForm;
 use frontend\models\VerifyEmailForm;
 use Yii;
@@ -14,7 +15,7 @@ use frontend\models\PasswordResetRequestForm;
 use frontend\models\ResetPasswordForm;
 use frontend\models\SignupForm;
 use frontend\models\ContactForm;
-
+use frontend\models\ActiveForm;
 /**
  * Site controller
  */
@@ -273,5 +274,14 @@ class SiteController extends Controller
         return $this->render('resendVerificationEmail', [
             'model' => $model
         ]);
+    }
+    public function actionForm()
+    {
+        $model = new ActiveForm();
+        if ($model->load(Yii::$app->request->post()) && $model->validate()) {
+            return $this->render('form-confirm', ['model' => $model]);
+        } else {
+            return $this->render('form', ['model' => $model]);
+        }
     }
 }
