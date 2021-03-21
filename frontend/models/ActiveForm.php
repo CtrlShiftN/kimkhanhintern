@@ -12,19 +12,18 @@ class ActiveForm extends Model
     public $password;
     public $name;
 
-    public function rules()
-    {
-        return [
-            [['name', 'email', 'password'], 'required'],
-            ['email', 'trim'],
-            ['email', 'email'],
-            ['email', 'string', 'max' => 255],
-            ['email', 'unique', 'targetClass' => '\common\models\User', 'message' => 'This email address has already been taken.'],
+   public function rules(){
+       return [
+           [['name', 'email', 'password'], 'required'],
+           ['email', 'trim'],
+           ['email', 'email'],
+           ['email', 'string', 'max' => 255],
+           ['email', 'unique', 'targetClass' => '\common\models\User', 'message' => 'This email address has already been taken.'],
 
-            ['password', 'string', 'min' => Yii::$app->params['user.passwordMinLength']],
+           ['password', 'string', 'min' => Yii::$app->params['user.passwordMinLength']],
 
-            ['name', 'trim'],
-            ['name', 'string', 'max' => 100],
-        ];
-    }
+           ['name', 'trim'],
+           ['name', 'string', 'max' => 100],
+       ];
+   }
 }
