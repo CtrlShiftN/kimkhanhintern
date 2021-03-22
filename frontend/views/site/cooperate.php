@@ -3,6 +3,7 @@
 /* @var $this yii\web\View */
 
 $this->title = 'Cooperate';
+$cdnUrl = Yii::$app->params['frontend'];
 ?>
 <div class="bg-light p-3">
     <div class="container bg-white">
@@ -38,7 +39,7 @@ $this->title = 'Cooperate';
             echo "<div class = 'col-12'>";
             echo "<div class = 'row my-3 mx-2 bg-dark'>";
             echo "<div class = 'col-4 m-auto p-0 imageNone'>";
-            echo "<img class = 'w-100 m-auto p-0' src=./web/img/$image[$value]' alt=''>";
+            echo "<img class = 'w-100 m-auto p-0' src='<?= $cdnUrl ?>/web/img/$image[$value]' alt=''>";
             echo "</div>";
             echo "<div class='col-8 bg-dark m-auto text-white p-2'>";
             echo "<h5><a class='text-light' href='#'>" . $companyName[$value] . "</a></h5>";
