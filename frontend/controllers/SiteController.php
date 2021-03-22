@@ -278,4 +278,7 @@ class SiteController extends Controller
     public function actionCooperate() {
         return $this->render('cooperate');
     }
+    public function actionFrequentlyAskedQuestions() {
+        return $this->render('frequentlyaskedquestions');
+    }
 }
