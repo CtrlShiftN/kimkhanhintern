@@ -3,11 +3,13 @@
 namespace frontend\controllers;
 
 use common\models\LoginForm;
+use common\models\User;
 use frontend\models\ActiveForm;
 use frontend\models\ContactForm;
 use frontend\models\PasswordResetRequestForm;
 use frontend\models\ResendVerificationEmailForm;
 use frontend\models\ResetPasswordForm;
+use frontend\models\ResponseForm;
 use frontend\models\SignupForm;
 use frontend\models\VerifyEmailForm;
 use Yii;
@@ -294,6 +296,20 @@ class SiteController extends Controller
             return $this->render('form', ['model' => $model]);
 
         }
+    }
+
+    public function actionResponse()
+    {
+        $userModel = new User();
+        $myModel = $userModel::findOne(Yii::$app->user->identity->getId());
+        if ($myModel->load(Yii::$app->request->post()) && $myModel->validate()){
+            if ($myModel->saveResponse()){
+                $this->goHome();
+            }
+        }
+        return $this->render('response', [
+            'model' => $myModel
+        ]);
     }
 
 }
