@@ -17,7 +17,6 @@ use yii\filters\VerbFilter;
 use yii\web\BadRequestHttpException;
 use yii\web\Controller;
 use yii\web\Response;
-
 /**
  * Site controller
  */
@@ -296,4 +295,10 @@ class SiteController extends Controller
         }
     }
 
+    /**
+     * @return string
+     */
+   public function actionOrganizationChart(){
+        return $this->render('organization_chart');
+   }
 }
