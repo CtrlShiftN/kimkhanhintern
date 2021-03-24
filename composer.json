@@ -19,8 +19,13 @@
         "yiisoft/yii2-bootstrap": "~2.0.0",
         "yiisoft/yii2-swiftmailer": "~2.0.0 || ~2.1.0",
         "yiisoft/yii2-bootstrap4": "^2.0",
+<<<<<<< HEAD
         "kongoon/yii2-orgchart": "^0.0.2",
         "kartik-v/yii2-tabs-x": "^1.2"
+=======
+        "kartik-v/yii2-nav-x": "^1.2",
+        "kartik-v/yii2-grid": "^3.3"
+>>>>>>> 4fa3061ef59ff2bfada5fc9f13e69a6e0d93b1ff
     },
     "require-dev": {
         "yiisoft/yii2-debug": "~2.1.0",

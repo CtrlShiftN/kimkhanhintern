@@ -69,11 +69,6 @@ class SiteController extends Controller
         ];
     }
 
-    /**
-     * @param \yii\base\Action $action
-     * @return bool
-     * @throws BadRequestHttpException
-     */
     public function beforeAction($action)
     {
         $this->layout = 'v1';
@@ -113,7 +108,6 @@ class SiteController extends Controller
 
             return $this->render('login', [
                 'model' => $model,
-
             ]);
         }
     }
