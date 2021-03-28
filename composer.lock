@@ -4,11 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-<<<<<<< HEAD
-    "content-hash": "b030e84658fb54964491f0bd70c4e426",
-=======
     "content-hash": "c094f83b66078060857e470944966de8",
->>>>>>> 4fa3061ef59ff2bfada5fc9f13e69a6e0d93b1ff
     "packages": [
         {
             "name": "bower-asset/bootstrap",
@@ -373,25 +369,6 @@
             "time": "2020-06-29T00:56:53+00:00"
         },
         {
-<<<<<<< HEAD
-            "name": "kartik-v/bootstrap-tabs-x",
-            "version": "v1.3.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/kartik-v/bootstrap-tabs-x.git",
-                "reference": "b6945aa163a1943b212b217b443086ae5b0e503e"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/kartik-v/bootstrap-tabs-x/zipball/b6945aa163a1943b212b217b443086ae5b0e503e",
-                "reference": "b6945aa163a1943b212b217b443086ae5b0e503e",
-                "shasum": ""
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "1.3.x-dev"
-=======
             "name": "kartik-v/yii2-bootstrap4-dropdown",
             "version": "v1.0.1",
             "source": {
@@ -415,16 +392,11 @@
             "extra": {
                 "branch-alias": {
                     "dev-master": "1.0.x-dev"
->>>>>>> 4fa3061ef59ff2bfada5fc9f13e69a6e0d93b1ff
                 }
             },
             "autoload": {
                 "psr-4": {
-<<<<<<< HEAD
-                    "kartik\\plugins\\tabs\\": ""
-=======
                     "kartik\\bs4dropdown\\": "src"
->>>>>>> 4fa3061ef59ff2bfada5fc9f13e69a6e0d93b1ff
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -438,42 +410,6 @@
                     "homepage": "http://www.krajee.com/"
                 }
             ],
-<<<<<<< HEAD
-            "description": "Extended Bootstrap Tabs with ability to align tabs in multiple ways, add borders, rotated titles, and more.",
-            "homepage": "https://github.com/kartik-v/bootstrap-tabs-x",
-            "keywords": [
-                "bootstrap",
-                "extended",
-                "jquery",
-                "modal",
-                "modal-tabs",
-                "tabs",
-                "tabs-x"
-            ],
-            "support": {
-                "issues": "https://github.com/kartik-v/bootstrap-tabs-x/issues",
-                "source": "https://github.com/kartik-v/bootstrap-tabs-x/tree/v1.3.3"
-            },
-            "time": "2021-01-12T03:53:30+00:00"
-        },
-        {
-            "name": "kartik-v/yii2-krajee-base",
-            "version": "v2.0.5",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/kartik-v/yii2-krajee-base.git",
-                "reference": "9ddb662bdf49fdb671a90853912a40418a26a0dd"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/kartik-v/yii2-krajee-base/zipball/9ddb662bdf49fdb671a90853912a40418a26a0dd",
-                "reference": "9ddb662bdf49fdb671a90853912a40418a26a0dd",
-                "shasum": ""
-            },
-            "suggest": {
-                "yiisoft/yii2-bootstrap": "for Krajee extensions to work with Bootstrap 3.x version",
-                "yiisoft/yii2-bootstrap4": "for Krajee extensions to work with Bootstrap 4.x version"
-=======
             "description": "Enhanced Bootstrap 4 dropdown widget for Yii2 with nested submenu support",
             "homepage": "https://github.com/kartik-v/yii2-bootstrap4-dropdown",
             "keywords": [
@@ -616,25 +552,16 @@
             },
             "suggest": {
                 "kartik-v/yii2-mpdf": "For exporting grids to PDF"
->>>>>>> 4fa3061ef59ff2bfada5fc9f13e69a6e0d93b1ff
             },
             "type": "yii2-extension",
             "extra": {
                 "branch-alias": {
-<<<<<<< HEAD
-                    "dev-master": "2.0.x-dev"
-=======
                     "dev-master": "3.3.x-dev"
->>>>>>> 4fa3061ef59ff2bfada5fc9f13e69a6e0d93b1ff
                 }
             },
             "autoload": {
                 "psr-4": {
-<<<<<<< HEAD
-                    "kartik\\base\\": "src"
-=======
                     "kartik\\grid\\": "src"
->>>>>>> 4fa3061ef59ff2bfada5fc9f13e69a6e0d93b1ff
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -648,49 +575,15 @@
                     "homepage": "http://www.krajee.com/"
                 }
             ],
-<<<<<<< HEAD
-            "description": "Base library and foundation components for all Yii2 Krajee extensions.",
-            "homepage": "https://github.com/kartik-v/yii2-krajee-base",
-            "keywords": [
-                "base",
-                "extension",
-                "foundation",
-                "krajee",
-=======
             "description": "Yii 2 GridView on steroids. Various enhancements and utilities for the Yii 2.0 GridView widget.",
             "homepage": "https://github.com/kartik-v/yii2-grid",
             "keywords": [
                 "extension",
                 "grid",
->>>>>>> 4fa3061ef59ff2bfada5fc9f13e69a6e0d93b1ff
                 "widget",
                 "yii2"
             ],
             "support": {
-<<<<<<< HEAD
-                "issues": "https://github.com/kartik-v/yii2-krajee-base/issues",
-                "source": "https://github.com/kartik-v/yii2-krajee-base/tree/master"
-            },
-            "time": "2019-03-13T17:14:54+00:00"
-        },
-        {
-            "name": "kartik-v/yii2-tabs-x",
-            "version": "v1.2.7",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/kartik-v/yii2-tabs-x.git",
-                "reference": "196dfc6aaa593c3f2011e23cf9a2da35208919fc"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/kartik-v/yii2-tabs-x/zipball/196dfc6aaa593c3f2011e23cf9a2da35208919fc",
-                "reference": "196dfc6aaa593c3f2011e23cf9a2da35208919fc",
-                "shasum": ""
-            },
-            "require": {
-                "kartik-v/bootstrap-tabs-x": "~1.3",
-                "kartik-v/yii2-krajee-base": ">=1.9"
-=======
                 "issues": "https://github.com/kartik-v/yii2-grid/issues",
                 "source": "https://github.com/kartik-v/yii2-grid/tree/master"
             },
@@ -719,25 +612,16 @@
             "suggest": {
                 "yiisoft/yii2-bootstrap": "for Krajee extensions to work with Bootstrap 3.x version",
                 "yiisoft/yii2-bootstrap4": "for Krajee extensions to work with Bootstrap 4.x version"
->>>>>>> 4fa3061ef59ff2bfada5fc9f13e69a6e0d93b1ff
             },
             "type": "yii2-extension",
             "extra": {
                 "branch-alias": {
-<<<<<<< HEAD
-                    "dev-master": "1.2.x-dev"
-=======
                     "dev-master": "2.0.x-dev"
->>>>>>> 4fa3061ef59ff2bfada5fc9f13e69a6e0d93b1ff
                 }
             },
             "autoload": {
                 "psr-4": {
-<<<<<<< HEAD
-                    "kartik\\tabs\\": "src"
-=======
                     "kartik\\base\\": "src"
->>>>>>> 4fa3061ef59ff2bfada5fc9f13e69a6e0d93b1ff
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -751,46 +635,6 @@
                     "homepage": "http://www.krajee.com/"
                 }
             ],
-<<<<<<< HEAD
-            "description": "An extended bootstrap 3.0 tabs widget with ability to align tabs in multiple ways, add borders, rotated titles, and more.",
-            "homepage": "https://github.com/kartik-v/yii2-tabs-x",
-            "keywords": [
-                "bootstrap",
-                "extended",
-                "jquery",
-                "modal",
-                "modal-tabs",
-                "tabs",
-                "tabs-x"
-            ],
-            "support": {
-                "issues": "https://github.com/kartik-v/yii2-tabs-x/issues",
-                "source": "https://github.com/kartik-v/yii2-tabs-x/tree/master"
-            },
-            "time": "2018-09-26T10:53:28+00:00"
-        },
-        {
-            "name": "kongoon/yii2-orgchart",
-            "version": "0.0.2",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/kongoon/yii2-orgchart.git",
-                "reference": "689403572f31b8b33d04b26fb96f98d243427a04"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/kongoon/yii2-orgchart/zipball/689403572f31b8b33d04b26fb96f98d243427a04",
-                "reference": "689403572f31b8b33d04b26fb96f98d243427a04",
-                "shasum": ""
-            },
-            "require": {
-                "yiisoft/yii2": "*"
-            },
-            "type": "yii2-extension",
-            "autoload": {
-                "psr-4": {
-                    "kongoon\\orgchart\\": ""
-=======
             "description": "Base library and foundation components for all Yii2 Krajee extensions.",
             "homepage": "https://github.com/kartik-v/yii2-krajee-base",
             "keywords": [
@@ -833,37 +677,10 @@
             "autoload": {
                 "psr-4": {
                     "kartik\\nav\\": "src"
->>>>>>> 4fa3061ef59ff2bfada5fc9f13e69a6e0d93b1ff
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
-<<<<<<< HEAD
-                "BSD 3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Manop Kongoon",
-                    "email": "kongoon@gmail.com",
-                    "homepage": "https://www.programmerthailand.com/"
-                }
-            ],
-            "description": "Google Visualization OrgChart for Yii Framework 2.0",
-            "homepage": "https://github.com/kongoon/yii2-orgchart",
-            "keywords": [
-                "OrgChart",
-                "extension",
-                "google",
-                "visualization",
-                "yii",
-                "yii2"
-            ],
-            "support": {
-                "issues": "https://github.com/kongoon/yii2-orgchart/issues",
-                "source": "https://github.com/kongoon/yii2-orgchart/tree/master"
-            },
-            "time": "2016-05-23T09:14:15+00:00"
-=======
                 "BSD-3-Clause"
             ],
             "authors": [
@@ -889,7 +706,6 @@
                 "source": "https://github.com/kartik-v/yii2-nav-x/tree/master"
             },
             "time": "2018-09-19T18:16:36+00:00"
->>>>>>> 4fa3061ef59ff2bfada5fc9f13e69a6e0d93b1ff
         },
         {
             "name": "npm-asset/bootstrap",
