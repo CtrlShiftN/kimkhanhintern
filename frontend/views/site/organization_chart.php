@@ -183,11 +183,11 @@ $cdnUrl = Yii::$app->params['frontend'];
 
             <div class="row">
 
-                <div class="col-1 col-sm-2 col-md-4 col-lg-4"></div>
-                <div class="col-10 col-sm-8 col-md-4 col-lg-4 px-lg-5 px-md-3 px-sm-2">
+                <div class="col-2 col-sm-2 col-md-4 col-lg-4"></div>
+                <div class="col-8 col-sm-8 col-md-4 col-lg-4 px-lg-5 px-md-3 px-sm-2">
                     <p class="py-2 bg-danger text-center text-white m-0 m-auto">BAN GIÁM ĐỐC</p>
                 </div>
-                <div class="col-1 col-sm-2 col-md-4 col-lg-4"></div>
+                <div class="col-2 col-sm-2 col-md-4 col-lg-4"></div>
 
             </div>
             <div class="row">
@@ -314,13 +314,13 @@ $cdnUrl = Yii::$app->params['frontend'];
                 <div class="col-6 col-sm-6 col-md-6 col-lg-6">
                     <div class="row">
                         <div class="col-6 col-sm-6 col-md-6 col-lg-6"></div>
-                        <div class="col-6 col-sm-6 col-md-6 col-lg-6 border-right  border-danger py-3"></div>
+                        <div class="col-6 col-sm-6 col-md-6 col-lg-6 border-right  border-danger py-3 d-none d-lg-inline d-lg-inline d-lg-inline"></div>
                     </div>
                 </div>
 
                 <div class="col-6 col-sm-6 col-md-6 col-lg-6">
                     <div class="row">
-                        <div class="col-6 col-sm-6 col-md-6 col-lg-6 border-left border-danger py-3"></div>
+                        <div class="col-6 col-sm-6 col-md-6 col-lg-6 border-left border-danger py-3 d-none d-lg-inline d-lg-inline d-lg-inline"></div>
                         <div class="col-6 col-sm-6 col-md-6 col-lg-6 "></div>
                     </div>
                 </div>
@@ -328,7 +328,7 @@ $cdnUrl = Yii::$app->params['frontend'];
             <div class="row">
 
                 <div class="col-1 col-sm-4 col-md-4 col-lg-4"></div>
-                <div class="col-10 col-sm-4 col-md-4 col-lg-4 px-5 px-sm-2 px-md-3 px-lg-5">
+                <div class="col-10 col-sm-4 col-md-4 col-lg-4 px-5 px-sm-2 px-md-3 px-lg-5 d-none d-lg-inline d-lg-inline d-lg-inline">
                     <p class="py-2 bg-danger text-center text-white m-0 px-2 m-auto">TỔNG PHỤ TRÁCH</p>
                 </div>
                 <div class="col-1 col-sm-4 col-md-4 col-lg-4"></div>
@@ -359,11 +359,11 @@ $cdnUrl = Yii::$app->params['frontend'];
                         <div class="col-12 col-sm-6 col-md-6 col-lg-6 border-top border-danger feature-sm-1"></div>
                     </div>
                     <div class="row">
-                        <div class="col-1 col-sm-2 col-md-0 col-lg-0"></div>
-                        <div class="col-10 col-sm-8 col-md-12 col-lg-12 px-5 px-sm-2 px-md-3 px-lg-5">
+                        <div class="col-2 col-sm-2 col-md-0 col-lg-0"></div>
+                        <div class="col-8 col-sm-8 col-md-12 col-lg-12 px-5 px-sm-2 px-md-3 px-lg-5">
                             <p class="py-2 bg-danger text-center text-white m-0 px-2 m-auto">PHÒNG DEV</p>
                         </div>
-                        <div class="col-1 col-sm-2 col-md-0 col-lg-0"></div>
+                        <div class="col-2 col-sm-2 col-md-0 col-lg-0"></div>
                     </div>
                     <div class="row">
                         <div class="col-6 col-sm-6 col-md-6 col-lg-6 border-right border-danger py-2"></div>
@@ -372,15 +372,15 @@ $cdnUrl = Yii::$app->params['frontend'];
                     <div class="row">
                         <div class="col-2 col-sm-0 col-lg-0 col-md-0"></div>
                         <div class="col-8 col-md-12 col-sm-12 col-lg-12 px-sm-3 px-lg-3 px-md-2">
-                            <div class="card border-0 shadow-lg">
+                            <div class="card border-0 shadow-lg text-center bg-dark">
                                 <img src="<?= $cdnUrl ?>/img/background.jpg" alt=""
-                                     class="card-img-top">
-                                <div class="card-body text-center bg-dark">
-                                    <h6 class="text-white  text-center card-title">Name:<span
+                                     class="img-fluid rounded-circle mx-auto my-3 mt-4">
+                                <div class="card-body text-center border-light border-top">
+                                    <h6 class="text-white"><span
                                                 class="text-warning font-weight-lighter">Nguyễn Hoàng Quỳnh Châu</span>
                                     </h6>
-                                    <h6 class="text-white text-center">Chức Vụ:<span
-                                                class=" text-warning font-weight-lighter"> Giám Đốc</span>
+                                    <h6 class="text-white"><span
+                                                class=" text-danger font-weight-lighter"> Giám Đốc</span>
                                     </h6>
                                     <div class="social-group pt-3 text-center mx-auto">
                                         <a href="#"><span
@@ -405,11 +405,11 @@ $cdnUrl = Yii::$app->params['frontend'];
                         <div class="col-0 col-sm-0 col-md-6 col-lg-6  border-danger border-top  feature-sm-0 feature-sm-1"></div>
                     </div>
                     <div class="row">
-                        <div class="col-1 col-sm-2 col-md-0 col-lg-0"></div>
-                        <div class="col-10 col-sm-8 col-md-12 col-lg-12 px-5 px-sm-2 px-md-3 px-lg-5">
+                        <div class="col-2 col-sm-2 col-md-0 col-lg-0"></div>
+                        <div class="col-8 col-sm-8 col-md-12 col-lg-12 px-5 px-sm-2 px-md-3 px-lg-5">
                             <p class="py-2 bg-danger text-center text-white m-0 px-2 m-auto">PHÒNG TECH</p>
                         </div>
-                        <div class="col-1 col-sm-2 col-md-0 col-lg-0"></div>
+                        <div class="col-2 col-sm-2 col-md-0 col-lg-0"></div>
                     </div>
 
                     <div class="row">
@@ -419,15 +419,15 @@ $cdnUrl = Yii::$app->params['frontend'];
                     <div class="row">
                         <div class="col-2 col-sm-0 col-lg-0 col-md-0"></div>
                         <div class="col-8 col-md-12 col-sm-12 col-lg-12 px-sm-3 px-lg-3 px-md-2">
-                            <div class="card border-0 shadow-lg">
+                            <div class="card border-0 shadow-lg text-center bg-dark">
                                 <img src="<?= $cdnUrl ?>/img/background.jpg" alt=""
-                                     class="card-img-top">
-                                <div class="card-body text-center bg-dark">
-                                    <h6 class="text-white  text-center card-title">Name:<span
+                                     class="img-fluid rounded-circle mx-auto my-3 mt-4">
+                                <div class="card-body text-center border-light border-top">
+                                    <h6 class="text-white"><span
                                                 class="text-warning font-weight-lighter">Nguyễn Hoàng Quỳnh Châu</span>
                                     </h6>
-                                    <h6 class="text-white text-center">Chức Vụ:<span
-                                                class=" text-warning font-weight-lighter"> Giám Đốc</span>
+                                    <h6 class="text-white"><span
+                                                class=" text-danger font-weight-lighter"> Giám Đốc</span>
                                     </h6>
                                     <div class="social-group pt-3 text-center mx-auto">
                                         <a href="#"><span
@@ -444,98 +444,100 @@ $cdnUrl = Yii::$app->params['frontend'];
 
                     </div>
                 </div>
-                <div class="col-12 col-sm-6 col-md-3 col-lg-3 mt-3 mt-sm-0 mt-md-0 mt-lg-0"">
-                    <div class="row">
-                        <div class="col-12 col-sm-6 col-md-6 col-lg-6 border-top border-danger feature-sm-0 feature-sm-1"></div>
-                        <div class="col-12 col-sm-6 col-md-6 col-lg-6 border-danger border-left py-lg-3 py-sm-2 border-top border-danger feature-sm-1 "></div>
+                <div class="col-12 col-sm-6 col-md-3 col-lg-3 mt-3 mt-sm-0 mt-md-0 mt-lg-0"
+                ">
+                <div class="row">
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-6 border-top border-danger feature-sm-0 feature-sm-1"></div>
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-6 border-danger border-left py-lg-3 py-sm-2 border-top border-danger feature-sm-1 "></div>
+                </div>
+                <div class="row">
+                    <div class="col-2 col-sm-2 col-md-0 col-lg-0"></div>
+                    <div class="col-8 col-sm-8 col-md-12 col-lg-12 px-5 px-sm-2 px-md-3 px-lg-5">
+                        <p class="py-2 bg-danger text-center text-white m-0 px-2 m-auto">PHÒNG KỸ SƯ</p>
                     </div>
-                    <div class="row">
-                        <div class="col-1 col-sm-2 col-md-0 col-lg-0"></div>
-                        <div class="col-10 col-sm-8 col-md-12 col-lg-12 px-5 px-sm-2 px-md-3 px-lg-5">
-                            <p class="py-2 bg-danger text-center text-white m-0 px-2 m-auto">PHÒNG KỸ SƯ</p>
-                        </div>
-                        <div class="col-1 col-sm-2 col-md-0 col-lg-0"></div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-6 col-sm-6 col-md-6 col-lg-6 border-right border-danger py-2"></div>
-                        <div class="col-6 col-sm-6 col-md-6 col-lg-6 border-left border-danger py-2"></div>
-                    </div>
-                    <div class="row">
-                        <div class="col-2 col-sm-0 col-lg-0 col-md-0"></div>
-                        <div class="col-8 col-md-12 col-sm-12 col-lg-12 px-sm-3 px-lg-3 px-md-2">
-                            <div class="card border-0 shadow-lg">
-                                <img src="<?= $cdnUrl ?>/img/background.jpg" alt=""
-                                     class="card-img-top">
-                                <div class="card-body text-center bg-dark">
-                                    <h6 class="text-white  text-center card-title">Name:<span
-                                                class="text-warning font-weight-lighter">Nguyễn Hoàng Quỳnh Châu</span>
-                                    </h6>
-                                    <h6 class="text-white text-center">Chức Vụ:<span
-                                                class=" text-warning font-weight-lighter"> Giám Đốc</span>
-                                    </h6>
-                                    <div class="social-group pt-3 text-center mx-auto">
-                                        <a href="#"><span
-                                                    class="fab fa-facebook text-danger bg-white p-2 rounded-circle"></span></a>
-                                        <a href="#"><span
-                                                    class="fab fa-twitter text-danger bg-white p-2 rounded-circle"></span></a>
-                                        <a href="#"><span
-                                                    class="fab fa-instagram text-danger bg-white p-2 rounded-circle"></span></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-2 col-sm-0 col-lg-0 col-md-0"></div>
-
-                    </div>
+                    <div class="col-2 col-sm-2 col-md-0 col-lg-0"></div>
                 </div>
 
-                <div class="col-12 col-sm-6 col-md-3 col-lg-3 mt-3 mt-sm-0 mt-md-0 mt-lg-0"">
-
-                    <div class="row">
-                        <div class="col-12 col-sm-6 col-md-6 col-lg-6 border-top border-danger feature-sm-1"></div>
-                        <div class="col-12 col-sm-6 col-md-6 col-lg-6 border-danger border-left py-lg-3 py-sm-2"></div>
-                    </div>
-                    <div class="row">
-                        <div class="col-1 col-sm-2 col-md-0 col-lg-0"></div>
-                        <div class="col-10 col-sm-8 col-md-12 col-lg-12 px-5 px-sm-2 px-md-3 px-lg-5">
-                            <p class="py-2 bg-danger text-center text-white m-0 px-2 m-auto">PHÒNG HỖ TRỢ</p>
-                        </div>
-                        <div class="col-1 col-sm-2 col-md-0 col-lg-0"></div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-6 col-sm-6 col-md-6 col-lg-6 border-right border-danger py-2"></div>
-                        <div class="col-6 col-sm-6 col-md-6 col-lg-6 border-left border-danger py-2"></div>
-                    </div>
-                    <div class="row">
-                        <div class="col-2 col-sm-0 col-lg-0 col-md-0"></div>
-                        <div class="col-8 col-md-12 col-sm-12 col-lg-12 px-sm-3 px-lg-3 px-md-2">
-                            <div class="card border-0 shadow-lg">
-                                <img src="<?= $cdnUrl ?>/img/background.jpg" alt=""
-                                     class="card-img-top">
-                                <div class="card-body text-center bg-dark">
-                                    <h6 class="text-white  text-center card-title">Name:<span
-                                                class="text-warning font-weight-lighter">Nguyễn Hoàng Quỳnh Châu</span>
-                                    </h6>
-                                    <h6 class="text-white text-center">Chức Vụ:<span
-                                                class=" text-warning font-weight-lighter"> Giám Đốc</span>
-                                    </h6>
-                                    <div class="social-group pt-3 text-center mx-auto">
-                                        <a href="#"><span
-                                                    class="fab fa-facebook text-danger bg-white p-2 rounded-circle"></span></a>
-                                        <a href="#"><span
-                                                    class="fab fa-twitter text-danger bg-white p-2 rounded-circle"></span></a>
-                                        <a href="#"><span
-                                                    class="fab fa-instagram text-danger bg-white p-2 rounded-circle"></span></a>
-                                    </div>
+                <div class="row">
+                    <div class="col-6 col-sm-6 col-md-6 col-lg-6 border-right border-danger py-2"></div>
+                    <div class="col-6 col-sm-6 col-md-6 col-lg-6 border-left border-danger py-2"></div>
+                </div>
+                <div class="row">
+                    <div class="col-2 col-sm-0 col-lg-0 col-md-0"></div>
+                    <div class="col-8 col-md-12 col-sm-12 col-lg-12 px-sm-3 px-lg-3 px-md-2">
+                        <div class="card border-0 shadow-lg text-center bg-dark">
+                            <img src="<?= $cdnUrl ?>/img/background.jpg" alt=""
+                                 class="img-fluid rounded-circle mx-auto my-3 mt-4">
+                            <div class="card-body text-center border-light border-top">
+                                <h6 class="text-white"><span
+                                            class="text-warning font-weight-lighter">Nguyễn Hoàng Quỳnh Châu</span>
+                                </h6>
+                                <h6 class="text-white"><span
+                                            class=" text-danger font-weight-lighter"> Giám Đốc</span>
+                                </h6>
+                                <div class="social-group pt-3 text-center mx-auto">
+                                    <a href="#"><span
+                                                class="fab fa-facebook text-danger bg-white p-2 rounded-circle"></span></a>
+                                    <a href="#"><span
+                                                class="fab fa-twitter text-danger bg-white p-2 rounded-circle"></span></a>
+                                    <a href="#"><span
+                                                class="fab fa-instagram text-danger bg-white p-2 rounded-circle"></span></a>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-2 col-sm-0 col-lg-0 col-md-0"></div>
-
                     </div>
+                    <div class="col-2 col-sm-0 col-lg-0 col-md-0"></div>
+
                 </div>
             </div>
-    </main>
+
+            <div class="col-12 col-sm-6 col-md-3 col-lg-3 mt-3 mt-sm-0 mt-md-0 mt-lg-0"
+            ">
+
+            <div class="row">
+                <div class="col-12 col-sm-6 col-md-6 col-lg-6 border-top border-danger feature-sm-1"></div>
+                <div class="col-12 col-sm-6 col-md-6 col-lg-6 border-danger border-left py-lg-3 py-sm-2"></div>
+            </div>
+            <div class="row">
+                <div class="col-2 col-sm-2 col-md-0 col-lg-0"></div>
+                <div class="col-8 col-sm-8 col-md-12 col-lg-12 px-5 px-sm-2 px-md-3 px-lg-5">
+                    <p class="py-2 bg-danger text-center text-white m-0 px-2 m-auto">PHÒNG HỖ TRỢ</p>
+                </div>
+                <div class="col-2 col-sm-2 col-md-0 col-lg-0"></div>
+            </div>
+
+            <div class="row">
+                <div class="col-6 col-sm-6 col-md-6 col-lg-6 border-right border-danger py-2"></div>
+                <div class="col-6 col-sm-6 col-md-6 col-lg-6 border-left border-danger py-2"></div>
+            </div>
+            <div class="row">
+                <div class="col-2 col-sm-0 col-lg-0 col-md-0"></div>
+                <div class="col-8 col-md-12 col-sm-12 col-lg-12 px-sm-3 px-lg-3 px-md-2">
+                    <div class="card border-0 shadow-lg text-center bg-dark">
+                        <img src="<?= $cdnUrl ?>/img/background.jpg" alt=""
+                             class="img-fluid rounded-circle mx-auto my-3 mt-4">
+                        <div class="card-body text-center border-light border-top">
+                            <h6 class="text-white"><span
+                                        class="text-warning font-weight-lighter">Nguyễn Hoàng Quỳnh Châu</span>
+                            </h6>
+                            <h6 class="text-white"><span
+                                        class=" text-danger font-weight-lighter"> Giám Đốc</span>
+                            </h6>
+                            <div class="social-group pt-3 text-center mx-auto">
+                                <a href="#"><span
+                                            class="fab fa-facebook text-danger bg-white p-2 rounded-circle"></span></a>
+                                <a href="#"><span
+                                            class="fab fa-twitter text-danger bg-white p-2 rounded-circle"></span></a>
+                                <a href="#"><span
+                                            class="fab fa-instagram text-danger bg-white p-2 rounded-circle"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2 col-sm-0 col-lg-0 col-md-0"></div>
+
+            </div>
+        </div>
+</div>
+</main>
 </div>
