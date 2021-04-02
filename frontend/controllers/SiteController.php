@@ -1,19 +1,25 @@
 <?php
+
 namespace frontend\controllers;
 
+use common\models\LoginForm;
+use frontend\models\ActiveForm;
+use frontend\models\ContactForm;
+use frontend\models\NewtestForm;
+use frontend\models\PasswordResetRequestForm;
 use frontend\models\ResendVerificationEmailForm;
+use frontend\models\ResetPasswordForm;
+use frontend\models\SignupForm;
 use frontend\models\VerifyEmailForm;
 use Yii;
 use yii\base\InvalidArgumentException;
+use yii\filters\AccessControl;
+use yii\filters\VerbFilter;
 use yii\web\BadRequestHttpException;
 use yii\web\Controller;
-use yii\filters\VerbFilter;
-use yii\filters\AccessControl;
-use common\models\LoginForm;
-use frontend\models\PasswordResetRequestForm;
-use frontend\models\ResetPasswordForm;
-use frontend\models\SignupForm;
-use frontend\models\ContactForm;
+use yii\web\Response;
+use frontend\models\Documment;
+use common\models\Newtable;
 
 /**
  * Site controller
@@ -67,11 +73,6 @@ class SiteController extends Controller
         ];
     }
 
-    /**
-     * @param \yii\base\Action $action
-     * @return bool
-     * @throws BadRequestHttpException
-     */
     public function beforeAction($action)
     {
         $this->layout = 'v1';
@@ -111,7 +112,6 @@ class SiteController extends Controller
 
             return $this->render('login', [
                 'model' => $model,
-
             ]);
         }
     }
@@ -233,8 +233,8 @@ class SiteController extends Controller
      * Verify email address
      *
      * @param string $token
+     * @return Response
      * @throws BadRequestHttpException
-     * @return yii\web\Response
      */
     public function actionVerifyEmail($token)
     {
@@ -275,10 +275,52 @@ class SiteController extends Controller
         ]);
     }
 
+
     public function actionCooperate() {
         return $this->render('cooperate');
     }
-    public function actionFrequentlyaskedquestions() {
-        return $this->render('frequentlyaskedquestions');
+    public function actionFaq() {
+        return $this->render('faq');
     }
+
+    /**
+     * @return string|Response
+     */
+    public function actionForm()
+    {
+
+        $model = new ActiveForm();
+        if ($model->load(Yii::$app->request->post()) && $model->validate()) {
+
+            return $this->goHome();
+
+        } else {
+
+            return $this->render('form', ['model' => $model]);
+
+        }
+    }
+    public function actionNewtest()
+    {
+            $model = new NewtestForm();
+            if ($model->load(Yii::$app->request->post()) && $model->validate()){
+                $model->create = date('Y-m-d H:i:s');
+                $model->updated = date('Y-m-d H:i:s');
+                $model->note = 'this is a note';
+                if($model->save()){
+                    $this->goHome();
+                }
+            }
+            return $this->render('newtest',[
+                    'model' => $model
+            ]);
+    }
+    public function actionTest(){
+        $arrDocumment = (new Documment())->getDocumment();
+        return $this->render('test',[
+           'arrDocumment'=>$arrDocumment
+        ]);
+    }
+    
+   
 }
