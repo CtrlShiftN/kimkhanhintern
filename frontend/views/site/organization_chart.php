@@ -6,14 +6,11 @@ $cdnUrl = Yii::$app->params['frontend'];
         body {
             font-weight: 500;
         }
-
-        .img-fluid {
+        .img-fluid{
             transition: 0.2s !important;
-
-            width: 5rem;
-            height: 5rem;
+            width: 5rem!important;
+            height: 5rem!important;
         }
-
         header {
             background-image: url("<?=$cdnUrl?>/img/chart-header.png");
             background-size: cover;
@@ -50,49 +47,39 @@ $cdnUrl = Yii::$app->params['frontend'];
         }
 
         @media (max-width: 990px) {
-            .card-content h6, .card-content .social-group {
-                text-align: center !important;
+           .img-fluid{
+                transition: 0.2s !important;
+                width: 5rem !important;
+                height: 5rem !important;
             }
 
             .border-bottom-md {
                 border-bottom: 1px solid white !important;
             }
 
+            .border-right-md-0{
+                border-right: none!important;
+            }
             .border-right-lg {
                 border-right: none !important;
-            }
-
-            .card h6, .card p, .card .social-group {
-                text-align: center !important;
             }
         }
 
         @media (max-width: 574px) {
-            .card-content h6 {
-                font-size: 13px !important;
+            .card h6, .card p, .fab {
+                font-size: 90% !important;
                 transition: 0.2s !important;
             }
+           .img-fluid {
+                width: 5rem !important;
+                transition: 0.2s !important;
 
-            p {
-                width: 95% !important;
-            }
-
-            .card h6, .card p, .fab {
-                font-size: 95% !important;
             }
 
             .feature-sm-1 {
                 border: none !important;
                 height: 0 !important;
             }
-
-            .px-5 {
-                padding-left: 0.7rem !important;
-                padding-right: 0.7rem !important;
-                transition: 0.2s !important;
-
-            }
-
             .border-right-md {
                 border-right: none !important;
             }
@@ -115,25 +102,16 @@ $cdnUrl = Yii::$app->params['frontend'];
         }
 
         @media (max-width: 370px) {
-            .card-content {
-                height: 255px !important;
-                transition: 0.2s !important;
-
-            }
-
             p {
                 width: 80% !important;
             }
-
+           .img-fluid{
+                transition: 0.2s !important;
+                width: 4rem !important;
+                height: 4rem !important;
+            }
             .card h6, .card p, .fab {
                 font-size: 80% !important;
-            }
-
-            .img-fluid {
-                width: 3rem;
-                height: 3rem;
-                transition: 0.2s !important;
-
             }
         }
     </style>
@@ -353,36 +331,27 @@ $cdnUrl = Yii::$app->params['frontend'];
 
 
             <div class="row m-0 p-0">
-                <div class="col-12 col-sm-6 col-md-3 col-lg-3 border-right-md pb-sm-4">
+                <div class="col-12 col-sm-6 col-md-3 col-lg-3 border-right-md">
                     <div class="row">
                         <div class="col-12 col-sm-6 col-md-6 col-lg-6 border-danger border-right py-lg-3 py-sm-2"></div>
                         <div class="col-12 col-sm-6 col-md-6 col-lg-6 border-top border-danger feature-sm-1"></div>
                     </div>
                     <div class="row">
-                        <div class="col-2 col-sm-2 col-md-0 col-lg-0"></div>
-                        <div class="col-8 col-sm-8 col-md-12 col-lg-12 px-5 px-sm-2 px-md-3 px-lg-5">
-                            <p class="py-2 bg-danger text-center text-white m-0 px-2 m-auto">PHÒNG DEV</p>
-                        </div>
-                        <div class="col-2 col-sm-2 col-md-0 col-lg-0"></div>
-                    </div>
-                    <div class="row">
-                        <div class="col-6 col-sm-6 col-md-6 col-lg-6 border-right border-danger py-2"></div>
-                        <div class="col-6 col-sm-6 col-md-6 col-lg-6 border-left border-danger py-2"></div>
-                    </div>
-                    <div class="row">
-                        <div class="col-2 col-sm-0 col-lg-0 col-md-0"></div>
-                        <div class="col-8 col-md-12 col-sm-12 col-lg-12 px-sm-3 px-lg-3 px-md-2">
-                            <div class="card border-0 shadow-lg text-center bg-dark">
-                                <img src="<?= $cdnUrl ?>/img/background.jpg" alt=""
-                                     class="img-fluid rounded-circle mx-auto my-3 mt-4">
-                                <div class="card-body text-center border-light border-top">
-                                    <h6 class="text-white"><span
+                        <div class="col-3 col-sm-0 col-lg-0 col-md-0"></div>
+                        <div class="col-6 col-md-12 col-sm-12 col-lg-12 px-sm-5 px-md-3 px-lg-3">
+                            <div class="row card-contents bg-dark py-lg-3 pb-sm-4 pt-sm-0 py-2 mb-sm-4">
+                                <div class="col-12 col-sm-12 col-md-12 col-lg-5 text-center border-light border-right-md-0 border-right  border-bottom-md pb-md-2 py-3 pb-sm-4 px-4 px-lg-2">
+                                    <img src="<?= $cdnUrl ?>/img/background.jpg" alt=""
+                                         class="img-fluid rounded-circle my-md-4">
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-12 col-lg-7 mt-sm-3 mt-3">
+                                    <h6 class="text-white text-lg-left text-center text-sm-center text-md-center"><span
                                                 class="text-warning font-weight-lighter">Nguyễn Hoàng Quỳnh Châu</span>
                                     </h6>
-                                    <h6 class="text-white"><span
-                                                class=" text-danger font-weight-lighter"> Giám Đốc</span>
+                                    <h6 class="text-white text-lg-left text-center text-sm-center text-md-center"><span
+                                                class=" text-danger font-weight-normal small">Trưởng phòng công nghệ</span>
                                     </h6>
-                                    <div class="social-group pt-3 text-center mx-auto">
+                                    <div class="social-group text-md-center text-lg-left text-sm-center text-center mx-auto">
                                         <a href="#"><span
                                                     class="fab fa-facebook text-danger bg-white p-2 rounded-circle"></span></a>
                                         <a href="#"><span
@@ -393,43 +362,33 @@ $cdnUrl = Yii::$app->params['frontend'];
                                 </div>
                             </div>
                         </div>
-                        <div class="col-2 col-sm-0 col-lg-0 col-md-0"></div>
+                        <div class="col-3 col-sm-0 col-lg-0 col-md-0"></div>
 
                     </div>
                 </div>
 
 
-                <div class="col-12 col-sm-6 col-md-3 col-lg-3 border-left-md mt-3 mt-sm-0 mt-md-0 mt-lg-0">
+                <div class="col-12 col-sm-6 col-md-3 col-lg-3 border-left-md">
                     <div class="row">
                         <div class="col-12 col-sm-6 col-md-6 col-lg-6 border-danger border-right py-lg-3 py-sm-2 border-top border-danger feature-sm-1"></div>
                         <div class="col-0 col-sm-0 col-md-6 col-lg-6  border-danger border-top  feature-sm-0 feature-sm-1"></div>
                     </div>
                     <div class="row">
-                        <div class="col-2 col-sm-2 col-md-0 col-lg-0"></div>
-                        <div class="col-8 col-sm-8 col-md-12 col-lg-12 px-5 px-sm-2 px-md-3 px-lg-5">
-                            <p class="py-2 bg-danger text-center text-white m-0 px-2 m-auto">PHÒNG TECH</p>
-                        </div>
-                        <div class="col-2 col-sm-2 col-md-0 col-lg-0"></div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-6 col-sm-6 col-md-6 col-lg-6 border-right border-danger py-2"></div>
-                        <div class="col-6 col-sm-6 col-md-6 col-lg-6 border-left border-danger py-2"></div>
-                    </div>
-                    <div class="row">
-                        <div class="col-2 col-sm-0 col-lg-0 col-md-0"></div>
-                        <div class="col-8 col-md-12 col-sm-12 col-lg-12 px-sm-3 px-lg-3 px-md-2">
-                            <div class="card border-0 shadow-lg text-center bg-dark">
-                                <img src="<?= $cdnUrl ?>/img/background.jpg" alt=""
-                                     class="img-fluid rounded-circle mx-auto my-3 mt-4">
-                                <div class="card-body text-center border-light border-top">
-                                    <h6 class="text-white"><span
+                        <div class="col-3 col-sm-0 col-lg-0 col-md-0"></div>
+                        <div class="col-6 col-md-12 col-sm-12 col-lg-12 px-sm-5 px-md-3 px-lg-3">
+                            <div class="row card-contents bg-dark py-lg-3 pb-sm-4 pt-sm-0 py-2">
+                                <div class="col-12 col-sm-12 col-md-12 col-lg-5 text-center border-light border-right-md-0 border-right  border-bottom-md pb-md-2 py-3 pb-sm-4 px-4 px-lg-2">
+                                    <img src="<?= $cdnUrl ?>/img/background.jpg" alt=""
+                                         class="img-fluid rounded-circle my-md-4">
+                                </div>
+                                <div class="col-12 col-sm-12 col-md-12 col-lg-7 mt-sm-3 mt-3">
+                                    <h6 class="text-white text-lg-left text-center text-sm-center text-md-center"><span
                                                 class="text-warning font-weight-lighter">Nguyễn Hoàng Quỳnh Châu</span>
                                     </h6>
-                                    <h6 class="text-white"><span
-                                                class=" text-danger font-weight-lighter"> Giám Đốc</span>
+                                    <h6 class="text-white text-lg-left text-center text-sm-center text-md-center"><span
+                                                class=" text-danger font-weight-normal small">Trưởng phòng công nghệ</span>
                                     </h6>
-                                    <div class="social-group pt-3 text-center mx-auto">
+                                    <div class="social-group text-md-center text-lg-left text-sm-center text-center mx-auto">
                                         <a href="#"><span
                                                     class="fab fa-facebook text-danger bg-white p-2 rounded-circle"></span></a>
                                         <a href="#"><span
@@ -440,42 +399,32 @@ $cdnUrl = Yii::$app->params['frontend'];
                                 </div>
                             </div>
                         </div>
-                        <div class="col-2 col-sm-0 col-lg-0 col-md-0"></div>
+                        <div class="col-3 col-sm-0 col-lg-0 col-md-0"></div>
 
                     </div>
                 </div>
-                <div class="col-12 col-sm-6 col-md-3 col-lg-3 mt-3 mt-sm-0 mt-md-0 mt-lg-0"
-                ">
+                <div class="col-12 col-sm-6 col-md-3 col-lg-3 mt-3 mt-sm-0 mt-md-0 mt-lg-0">
                 <div class="row">
                     <div class="col-12 col-sm-6 col-md-6 col-lg-6 border-top border-danger feature-sm-0 feature-sm-1"></div>
                     <div class="col-12 col-sm-6 col-md-6 col-lg-6 border-danger border-left py-lg-3 py-sm-2 border-top border-danger feature-sm-1 "></div>
                 </div>
-                <div class="row">
-                    <div class="col-2 col-sm-2 col-md-0 col-lg-0"></div>
-                    <div class="col-8 col-sm-8 col-md-12 col-lg-12 px-5 px-sm-2 px-md-3 px-lg-5">
-                        <p class="py-2 bg-danger text-center text-white m-0 px-2 m-auto">PHÒNG KỸ SƯ</p>
-                    </div>
-                    <div class="col-2 col-sm-2 col-md-0 col-lg-0"></div>
-                </div>
 
                 <div class="row">
-                    <div class="col-6 col-sm-6 col-md-6 col-lg-6 border-right border-danger py-2"></div>
-                    <div class="col-6 col-sm-6 col-md-6 col-lg-6 border-left border-danger py-2"></div>
-                </div>
-                <div class="row">
-                    <div class="col-2 col-sm-0 col-lg-0 col-md-0"></div>
-                    <div class="col-8 col-md-12 col-sm-12 col-lg-12 px-sm-3 px-lg-3 px-md-2">
-                        <div class="card border-0 shadow-lg text-center bg-dark">
-                            <img src="<?= $cdnUrl ?>/img/background.jpg" alt=""
-                                 class="img-fluid rounded-circle mx-auto my-3 mt-4">
-                            <div class="card-body text-center border-light border-top">
-                                <h6 class="text-white"><span
+                    <div class="col-3 col-sm-0 col-lg-0 col-md-0"></div>
+                    <div class="col-6 col-md-12 col-sm-12 col-lg-12 px-sm-5 px-md-3 px-lg-3">
+                        <div class="row card-contents bg-dark py-lg-3 pb-sm-4 pt-sm-0 py-2">
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-5 text-center border-light border-right-md-0 border-right  border-bottom-md pb-md-2 py-3 pb-sm-4 px-4 px-lg-2">
+                                <img src="<?= $cdnUrl ?>/img/background.jpg" alt=""
+                                     class="img-fluid rounded-circle my-md-4">
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-12 col-lg-7 mt-sm-3 mt-3">
+                                <h6 class="text-white text-lg-left text-center text-sm-center text-md-center"><span
                                             class="text-warning font-weight-lighter">Nguyễn Hoàng Quỳnh Châu</span>
                                 </h6>
-                                <h6 class="text-white"><span
-                                            class=" text-danger font-weight-lighter"> Giám Đốc</span>
+                                <h6 class="text-white text-lg-left text-center text-sm-center text-md-center"><span
+                                            class=" text-danger font-weight-normal small">Trưởng phòng công nghệ</span>
                                 </h6>
-                                <div class="social-group pt-3 text-center mx-auto">
+                                <div class="social-group text-md-center text-lg-left text-sm-center text-center mx-auto">
                                     <a href="#"><span
                                                 class="fab fa-facebook text-danger bg-white p-2 rounded-circle"></span></a>
                                     <a href="#"><span
@@ -486,44 +435,34 @@ $cdnUrl = Yii::$app->params['frontend'];
                             </div>
                         </div>
                     </div>
-                    <div class="col-2 col-sm-0 col-lg-0 col-md-0"></div>
+                    <div class="col-3 col-sm-0 col-lg-0 col-md-0"></div>
 
                 </div>
             </div>
 
-            <div class="col-12 col-sm-6 col-md-3 col-lg-3 mt-3 mt-sm-0 mt-md-0 mt-lg-0"
-            ">
+            <div class="col-12 col-sm-6 col-md-3 col-lg-3 mt-3 mt-sm-0 mt-md-0 mt-lg-0"">
 
             <div class="row">
                 <div class="col-12 col-sm-6 col-md-6 col-lg-6 border-top border-danger feature-sm-1"></div>
                 <div class="col-12 col-sm-6 col-md-6 col-lg-6 border-danger border-left py-lg-3 py-sm-2"></div>
             </div>
-            <div class="row">
-                <div class="col-2 col-sm-2 col-md-0 col-lg-0"></div>
-                <div class="col-8 col-sm-8 col-md-12 col-lg-12 px-5 px-sm-2 px-md-3 px-lg-5">
-                    <p class="py-2 bg-danger text-center text-white m-0 px-2 m-auto">PHÒNG HỖ TRỢ</p>
-                </div>
-                <div class="col-2 col-sm-2 col-md-0 col-lg-0"></div>
-            </div>
 
             <div class="row">
-                <div class="col-6 col-sm-6 col-md-6 col-lg-6 border-right border-danger py-2"></div>
-                <div class="col-6 col-sm-6 col-md-6 col-lg-6 border-left border-danger py-2"></div>
-            </div>
-            <div class="row">
-                <div class="col-2 col-sm-0 col-lg-0 col-md-0"></div>
-                <div class="col-8 col-md-12 col-sm-12 col-lg-12 px-sm-3 px-lg-3 px-md-2">
-                    <div class="card border-0 shadow-lg text-center bg-dark">
-                        <img src="<?= $cdnUrl ?>/img/background.jpg" alt=""
-                             class="img-fluid rounded-circle mx-auto my-3 mt-4">
-                        <div class="card-body text-center border-light border-top">
-                            <h6 class="text-white"><span
+                <div class="col-3 col-sm-0 col-lg-0 col-md-0"></div>
+                <div class="col-6 col-md-12 col-sm-12 col-lg-12 px-sm-5 px-md-3 px-lg-3">
+                    <div class="row card-contents bg-dark py-lg-3 pb-sm-4 pt-sm-0 py-2">
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-5 text-center border-light border-right-md-0 border-right  border-bottom-md pb-md-2 py-3 pb-sm-4 px-4 px-lg-2">
+                            <img src="<?= $cdnUrl ?>/img/background.jpg" alt=""
+                                 class="img-fluid rounded-circle my-md-4">
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-7 mt-sm-3 mt-3">
+                            <h6 class="text-white text-lg-left text-center text-sm-center text-md-center"><span
                                         class="text-warning font-weight-lighter">Nguyễn Hoàng Quỳnh Châu</span>
                             </h6>
-                            <h6 class="text-white"><span
-                                        class=" text-danger font-weight-lighter"> Giám Đốc</span>
+                            <h6 class="text-white text-lg-left text-center text-sm-center text-md-center"><span
+                                        class=" text-danger font-weight-normal small">Trưởng phòng công nghệ</span>
                             </h6>
-                            <div class="social-group pt-3 text-center mx-auto">
+                            <div class="social-group text-md-center text-lg-left text-sm-center text-center mx-auto">
                                 <a href="#"><span
                                             class="fab fa-facebook text-danger bg-white p-2 rounded-circle"></span></a>
                                 <a href="#"><span
@@ -534,8 +473,7 @@ $cdnUrl = Yii::$app->params['frontend'];
                         </div>
                     </div>
                 </div>
-                <div class="col-2 col-sm-0 col-lg-0 col-md-0"></div>
-
+                <div class="col-3 col-sm-0 col-lg-0 col-md-0"></div>
             </div>
         </div>
 </div>
