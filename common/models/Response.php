@@ -1,6 +1,6 @@
 <?php
 
-namespace frontend\models;
+namespace common\models;
 
 use Yii;
 
@@ -14,7 +14,7 @@ use Yii;
  * @property string|null $subject
  * @property string|null $body
  */
-class ContactForm extends \yii\db\ActiveRecord
+class Response extends \yii\db\ActiveRecord
 {
     /**
      * {@inheritdoc}
