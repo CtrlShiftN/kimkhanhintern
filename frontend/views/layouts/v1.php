@@ -159,7 +159,7 @@ $cdnUrl = Yii::$app->params['frontend'];
                                 </a>
                             </li>
                             <li class="dropdown-item">
-                                <a class="nav-link text-dark" href="<?= $cdnUrl ?>/#">
+                                <a class="nav-link text-dark" href="<?= $cdnUrl?>/site/organization_chart">
                                     <i class="fas fa-globe-asia"></i> Sơ đồ tổ chức
                                 </a>
                             </li>

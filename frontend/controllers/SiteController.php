@@ -271,7 +271,4 @@ class SiteController extends Controller
     public function actionOrganizationChart(){
         return $this->render('organization_chart');
     }
-    public function actionIntroduce(){
-        return $this->render('introduce');
-    }
 }
